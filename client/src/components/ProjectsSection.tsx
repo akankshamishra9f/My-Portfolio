@@ -25,7 +25,7 @@ export default function ProjectsSection() {
       description: "Real-time weather application using API integration to display current weather conditions and forecasts for any location.",
       image: weatherImg,
       tech: ["JavaScript", "API", "CSS"],
-      github: "#",
+      github: "https://github.com/akankshamishra9f/Weather-APP",
       demo: "#",
     },
     {
