@@ -5,18 +5,20 @@ import { setupVite, serveStatic, log } from "./vite";
 const app = express();
 
 // Extend IncomingMessage to include rawBody
-declare module 'http' {
+declare module "http" {
   interface IncomingMessage {
     rawBody: unknown;
   }
 }
 
 // Middleware to parse JSON and capture raw body
-app.use(express.json({
-  verify: (req, _res, buf) => {
-    req.rawBody = buf;
-  }
-}));
+app.use(
+  express.json({
+    verify: (req, _res, buf) => {
+      req.rawBody = buf;
+    },
+  })
+);
 app.use(express.urlencoded({ extended: false }));
 
 // Request logging middleware
@@ -61,23 +63,24 @@ app.use((req, res, next) => {
       log(`Error: ${message}`);
     });
 
-    // Setup Vite in development
+    // Setup Vite in development mode
     if (app.get("env") === "development") {
       await setupVite(app, server);
     } else {
       serveStatic(app);
     }
 
-    // Port and host configuration
-    const PORT = parseInt(process.env.PORT || '5000', 10);
-    const HOST = process.env.HOST || "localhost"; // changed to localhost for Windows
+    // 🌍 Handle host/port for local + Render environments
+    const isRender = process.env.RENDER === "true";
+    const PORT = parseInt(process.env.PORT || "5000", 10);
+    const HOST = isRender ? "0.0.0.0" : "localhost";
 
     server.listen(PORT, HOST, () => {
-      log(`Server running on http://${HOST}:${PORT} in ${app.get("env")} mode`);
+      log(`[express] Server running on http://${HOST}:${PORT} in ${app.get("env")} mode`);
     });
 
   } catch (err) {
-    console.error("Failed to start server:", err);
+    console.error("❌ Failed to start server:", err);
     process.exit(1);
   }
 })();
