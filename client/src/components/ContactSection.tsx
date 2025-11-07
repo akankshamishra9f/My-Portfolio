@@ -14,14 +14,59 @@ export default function ContactSection() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", message: "" });
+    
+    // Validate form fields
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Validation Error",
+        description: "Please fill in all fields before submitting.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Simulate form submission
+    // In production, replace with actual email service (Web3Forms, EmailJS, SendGrid, etc.)
+    try {
+      // TODO: Replace with actual email service integration
+      // For now, simulate a successful submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      console.log("Contact form submitted:", {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        timestamp: new Date().toISOString(),
+      });
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+      
+      // Clear form
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    }
   };
 
   const socialLinks = [
