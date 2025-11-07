@@ -288,6 +288,46 @@
     }
   }
 
+  /* Popping bubble animation */
+  @keyframes popBubble {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+
+  /* Ripple effect */
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  /* Sparkle animation */
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(180deg);
+    }
+  }
+
   /* Glow pulse animation */
   @keyframes glowPulse {
     0%, 100% {
@@ -318,6 +358,27 @@
     }
     100% {
       transform: translateX(100%) rotate(45deg);
+    }
+  }
+
+  /* Bounce scale animation */
+  @keyframes bounceScale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Glow expand animation */
+  @keyframes glowExpand {
+    0% {
+      box-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.8),
+                  0 0 50px rgba(236, 72, 153, 0.4);
     }
   }
 

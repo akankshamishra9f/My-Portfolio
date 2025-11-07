@@ -74,26 +74,29 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 onClick={() => scrollToSection("about")}
-                className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white font-poppins font-semibold px-8 shadow-lg hover-elevate relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-105"
+                className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white font-poppins font-semibold px-8 shadow-lg hover-elevate relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-105 hover:animate-[bounceScale_0.6s_ease-in-out]"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span className="absolute inset-0 rounded-md group-hover:animate-[ripple_0.6s_ease-out] bg-white/20"></span>
                 <span className="relative">About Me</span>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection("projects")}
-                className="border-primary/50 text-primary hover:bg-primary/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:scale-105 transition-all duration-300"
+                className="border-primary/50 text-primary hover:bg-primary/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:scale-105 transition-all duration-300 relative overflow-hidden group hover:animate-[glowExpand_0.3s_ease-out_forwards]"
               >
-                View Projects
+                <span className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+                <span className="relative">View Projects</span>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
-                className="border-pink-500/50 text-pink-500 hover:bg-pink-500/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(236,72,153,0.4)] hover:scale-105 transition-all duration-300"
+                className="border-pink-500/50 text-pink-500 hover:bg-pink-500/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(236,72,153,0.4)] hover:scale-105 transition-all duration-300 relative overflow-hidden group hover:animate-[glowExpand_0.3s_ease-out_forwards]"
               >
-                Contact
+                <span className="absolute inset-0 bg-gradient-to-r from-pink-500/0 via-pink-500/10 to-pink-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
+                <span className="relative">Contact</span>
               </Button>
             </div>
           </div>

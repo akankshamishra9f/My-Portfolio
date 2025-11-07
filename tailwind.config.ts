@@ -121,6 +121,11 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "gradient-shift": "gradient-shift 3s ease infinite",
+        "pop-bubble": "popBubble 0.6s ease-out",
+        "ripple": "ripple 0.6s ease-out",
+        "sparkle": "sparkle 1s ease-in-out infinite",
+        "bounce-scale": "bounceScale 0.6s ease-in-out",
+        "glow-expand": "glowExpand 0.3s ease-out forwards",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
