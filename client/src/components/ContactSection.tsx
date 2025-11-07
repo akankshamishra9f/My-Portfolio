@@ -120,7 +120,7 @@ export default function ContactSection() {
                   </label>
                   <Input
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="bg-background/50 border-primary/20 focus:border-primary"
@@ -134,7 +134,7 @@ export default function ContactSection() {
                   </label>
                   <Input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="email@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="bg-background/50 border-primary/20 focus:border-primary"
@@ -147,7 +147,7 @@ export default function ContactSection() {
                     Message
                   </label>
                   <Textarea
-                    placeholder="Tell me about your project..."
+                    placeholder="Open for Job Internship and Freelancer Work"
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -202,7 +202,7 @@ export default function ContactSection() {
             <Card className="p-8 bg-gradient-to-br from-primary/10 to-pink-500/10 border-primary/20">
               <h3 className="text-xl font-poppins font-semibold mb-3">Let's work together!</h3>
               <p className="text-muted-foreground font-montserrat text-sm">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Whether you need a website, want to collaborate on a project, or just want to say hi, my inbox is always open!
+                I’m open for work, internships, jobs, and freelance projects. Whether it’s building a website, collaborating on a project, or just connecting, my inbox is always open!
               </p>
             </Card>
           </div>

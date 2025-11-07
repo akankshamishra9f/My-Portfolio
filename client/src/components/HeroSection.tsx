@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
-import profileImage from "@assets/generated_images/Profile_photo_placeholder_05b41d0d.png";
+import { ArrowDown, Github, FileText } from "lucide-react";
+import profileImage from "@assets/generated_images/unnamed.jpg";
 
 export default function HeroSection() {
   const typedRef = useRef<HTMLSpanElement>(null);
@@ -14,6 +14,7 @@ export default function HeroSection() {
           "Python Programmer",
           "Creative Designer",
           "Problem Solver",
+          "Open for Work | Freelance | Part-time | Full-time"
         ],
         typeSpeed: 80,
         backSpeed: 60,
@@ -41,7 +42,10 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 -top-48 -left-48 bg-primary/30 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute w-96 h-96 -bottom-48 -right-48 bg-pink-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+        <div
+          className="absolute w-96 h-96 -bottom-48 -right-48 bg-pink-500/30 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: "1s" }}
+        ></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-32">
@@ -66,8 +70,8 @@ export default function HeroSection() {
             </div>
 
             <p className="text-lg text-muted-foreground font-montserrat mb-8 max-w-2xl mx-auto lg:mx-0">
-              B.Sc Computer Science Student at St. John College, passionate about creating
-              beautiful and functional web experiences.
+              Passionate Web Developer creating modern, responsive, and user-friendly web experiences.  
+              Open to <span className="font-semibold text-primary">freelance, part-time, and full-time opportunities</span>.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -97,6 +101,24 @@ export default function HeroSection() {
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-pink-500/0 via-pink-500/10 to-pink-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-500"></span>
                 <span className="relative">Contact</span>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => window.open("/path-to-your-resume.pdf", "_blank")}
+                className="border-purple-400/50 text-purple-400 hover:bg-purple-400/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(167,139,250,0.4)] hover:scale-105 transition-all duration-300 relative overflow-hidden group hover:animate-[glowExpand_0.3s_ease-out_forwards]"
+              >
+                <FileText className="mr-2 h-4 w-4" />
+                <span className="relative">Resume</span>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => window.open("https://github.com/akankshamishra9f", "_blank")}
+                className="border-gray-400/50 text-gray-400 hover:bg-gray-400/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(156,163,175,0.4)] hover:scale-105 transition-all duration-300 relative overflow-hidden group hover:animate-[glowExpand_0.3s_ease-out_forwards]"
+              >
+                <Github className="mr-2 h-4 w-4" />
+                <span className="relative">GitHub</span>
               </Button>
             </div>
           </div>

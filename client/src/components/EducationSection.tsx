@@ -3,7 +3,7 @@ import { GraduationCap, BookOpen, Award } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function EducationSection() {
-  const coursework = [
+  const skillsLearned = [
     "Web Development",
     "Object-Oriented Programming (Java)",
     "Database Management",
@@ -19,7 +19,7 @@ export default function EducationSection() {
           <h2 className="text-3xl sm:text-4xl font-poppins font-bold mb-4">
             My{" "}
             <span className="bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent">
-              Education
+              Learning Journey
             </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-pink-500 mx-auto rounded-full"></div>
@@ -41,17 +41,17 @@ export default function EducationSection() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-poppins font-bold mb-2">
-                      Bachelor of Science in Computer Science
+                      Skills & Knowledge Acquired
                     </h3>
                     <p className="text-lg font-montserrat text-primary font-semibold mb-1">
-                      St. John College
+                      Through Courses, Projects & Self-Learning
                     </p>
                     <p className="text-muted-foreground font-montserrat">
-                      2023 – 2026 (Expected)
+                      2023 – ∞ (Ongoing Learning)
                     </p>
                   </div>
                   <Badge className="bg-gradient-to-r from-primary to-pink-500 text-white border-0">
-                    Current
+                    Learning
                   </Badge>
                 </div>
 
@@ -59,17 +59,17 @@ export default function EducationSection() {
                   <div>
                     <div className="flex items-center gap-2 mb-3">
                       <BookOpen className="h-5 w-5 text-primary" />
-                      <h4 className="font-poppins font-semibold text-lg">Key Coursework</h4>
+                      <h4 className="font-poppins font-semibold text-lg">Key Skills & Topics</h4>
                     </div>
                     <div className="grid sm:grid-cols-2 gap-3">
-                      {coursework.map((course, index) => (
+                      {skillsLearned.map((skill, index) => (
                         <div
                           key={index}
                           className="flex items-center gap-2 p-3 bg-primary/5 border border-primary/10 rounded-md hover-elevate active-elevate-2"
-                          data-testid={`course-${index}`}
+                          data-testid={`skill-${index}`}
                         >
                           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-pink-500"></div>
-                          <span className="font-montserrat text-sm">{course}</span>
+                          <span className="font-montserrat text-sm">{skill}</span>
                         </div>
                       ))}
                     </div>
@@ -84,19 +84,19 @@ export default function EducationSection() {
                       <div className="flex items-start gap-2">
                         <span className="text-primary mt-1">▹</span>
                         <p className="font-montserrat text-sm text-muted-foreground">
-                          Consistently maintained strong academic performance
+                          Developed practical skills through real projects and challenges
                         </p>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="text-primary mt-1">▹</span>
                         <p className="font-montserrat text-sm text-muted-foreground">
-                          Active participant in coding competitions and hackathons
+                          Completed multiple online courses and personal projects
                         </p>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="text-primary mt-1">▹</span>
                         <p className="font-montserrat text-sm text-muted-foreground">
-                          Completed multiple web development projects and certifications
+                          Gained expertise in web development, programming, and algorithms
                         </p>
                       </div>
                     </div>
