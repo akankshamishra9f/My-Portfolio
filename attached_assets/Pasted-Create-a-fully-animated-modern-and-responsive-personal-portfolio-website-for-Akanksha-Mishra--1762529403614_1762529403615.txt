@@ -1,0 +1,76 @@
+Create a fully animated, modern, and responsive personal portfolio website for **Akanksha Mishra**, a passionate **B.Sc Computer Science student** at **St. John College**, expected to graduate in **2025–26**.
+
+🎨 **Overall Design Style:**
+- A glowing **purple-pink neon theme** with soft gradient backgrounds, animated lighting, and hover effects.
+- Smooth **scroll-based animations** for each section using scroll reveal or AOS-style animations.
+- Include **hover glow effects**, **interactive cards**, and **typing text animation** on the home section.
+- Add **smooth transitions** between sections and **scroll-to-top** button.
+- Fully **responsive design** that looks great on mobile and desktop.
+
+📜 **Sections:**
+
+1. **Home**
+   - Greeting: “Hi, I’m Akanksha Mishra 👋”
+   - Animated typing text like: “Web Developer | Python Programmer | Creative Designer”
+   - Glowing animated background or subtle particles.
+   - Profile photo placeholder.
+   - Button links: “About Me”, “Projects”, “Contact”.
+
+2. **About Me**
+   - Short intro:  
+     “I’m Akanksha Mishra, currently pursuing B.Sc Computer Science at St. John College. I love merging creativity and logic to develop modern, user-friendly web experiences. My goal is to become a full-stack developer and work on innovative projects that make an impact.”
+   - Add education info (St. John College, B.Sc CS, 2025–26).
+   - Add fun facts or hobbies: “I love exploring new technologies, designing creative UIs, and reading about AI innovations.”
+
+3. **Skills**
+   - Animated skill grid with hover effects for:  
+     HTML, CSS, JavaScript, Java, Python, Django, C++, WordPress, React.js, Git & GitHub, Figma (Design), MySQL, Tailwind CSS.
+   - Add progress bars or icons for each skill.
+
+4. **Projects**
+   - Four project cards with hover pop-up animations:
+     - **Portfolio Website** (HTML, CSS, JS)
+     - **Weather App** (JavaScript API)
+     - **Student Management System** (Python + Django)
+     - **Blog Website** (WordPress)
+   - Each card should glow and lift on hover.
+
+5. **Education**
+   - Timeline or simple card:
+     - St. John College — B.Sc Computer Science (2023–2026)
+     - Key Coursework: Web Development, OOP in Java, Database Management, Python Programming.
+
+6. **Contact Me**
+   - Add a **contact form** (using EmailJS or placeholder).
+   - Include buttons or links for:
+     - ✉️ Email: akanksha@example.com
+     - 💼 LinkedIn: linkedin.com/in/akankshamishra
+     - 💻 GitHub: github.com/akankshaM
+   - Add smooth glowing hover animation for icons.
+
+7. **Footer**
+   - “© 2025 Akanksha Mishra | Designed with 💖 and Code”
+   - Include a small floating glowing animation or star particles background.
+
+⚙️ **Tech Stack:**
+- HTML5, CSS3, JavaScript (no backend required, but easily extendable to Django later)
+- AOS or GSAP for scroll animations
+- Typed.js for typing effect
+- Font Awesome or Lucide icons
+- Google Fonts (Poppins, Montserrat)
+
+🌈 **Extra Touches:**
+- Dark/light theme toggle.
+- Smooth scroll behavior.
+- Section fade-in and hover transitions.
+- Gradient glowing buttons.
+- Floating glowing particles or neon line dividers between sections.
+
+📦 **Project Folder Structure:**
+- index.html
+- style.css
+- script.js
+- /assets (for images, icons, etc.)
+
+🎯 **Goal:**
+Deliver a glowing, professional, interactive, and animated personal portfolio website that highlights Akanksha Mishra’s personality, skills, and projects — perfect for showcasing to recruiters or as a final-year portfolio project.
