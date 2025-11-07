@@ -2,12 +2,15 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 import portfolioImg from "@assets/generated_images/Portfolio_website_project_a2967c34.png";
 import weatherImg from "@assets/generated_images/Weather_app_project_39fccd8c.png";
 import studentImg from "@assets/generated_images/Student_management_system_5845eb99.png";
 import blogImg from "@assets/generated_images/Blog_website_project_bb909ec2.png";
 
 export default function ProjectsSection() {
+  const [, setLocation] = useLocation();
+  
   const projects = [
     {
       title: "Portfolio Website",
