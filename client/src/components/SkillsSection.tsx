@@ -98,29 +98,31 @@ export default function SkillsSection() {
       </div>
 
       {/* CSS for glow pulse animation */}
-      <style jsx global>{`
-        @keyframes glowPulse {
-          0% {
-            box-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
-            transform: scale(1);
+      <style>
+        {`
+          @keyframes glowPulse {
+            0% {
+              box-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
+              transform: scale(1);
+            }
+            50% {
+              box-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
+              transform: scale(1.03);
+            }
+            100% {
+              box-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
+              transform: scale(1);
+            }
           }
-          50% {
-            box-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
-            transform: scale(1.03);
+          .hover-elevate:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
           }
-          100% {
-            box-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
-            transform: scale(1);
+          .active-elevate-2:active {
+            transform: translateY(-2px);
           }
-        }
-        .hover-elevate:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-        .active-elevate-2:active {
-          transform: translateY(-2px);
-        }
-      `}</style>
+        `}
+      </style>
     </section>
   );
 }
