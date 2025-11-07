@@ -52,7 +52,7 @@ export default function HeroSection() {
                 Welcome to my portfolio
               </span>
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-poppins font-bold mb-4">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-primary via-pink-500 to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
@@ -74,17 +74,16 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 onClick={() => scrollToSection("about")}
-                className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 font-montserrat font-semibold shadow-lg shadow-primary/50 hover-elevate active-elevate-2"
-                data-testid="button-about-me"
+                className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white font-poppins font-semibold px-8 shadow-lg hover-elevate relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-105"
               >
-                About Me
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span className="relative">About Me</span>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection("projects")}
-                className="border-primary/30 hover:bg-primary/10 font-montserrat font-semibold hover-elevate active-elevate-2"
-                data-testid="button-projects"
+                className="border-primary/50 text-primary hover:bg-primary/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:scale-105 transition-all duration-300"
               >
                 View Projects
               </Button>
@@ -92,10 +91,9 @@ export default function HeroSection() {
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
-                className="border-primary/30 hover:bg-primary/10 font-montserrat font-semibold hover-elevate active-elevate-2"
-                data-testid="button-contact"
+                className="border-pink-500/50 text-pink-500 hover:bg-pink-500/10 font-poppins font-semibold px-8 hover-elevate hover:shadow-[0_0_25px_rgba(236,72,153,0.4)] hover:scale-105 transition-all duration-300"
               >
-                Contact Me
+                Contact
               </Button>
             </div>
           </div>

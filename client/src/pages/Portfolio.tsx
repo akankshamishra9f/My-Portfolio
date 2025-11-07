@@ -8,6 +8,8 @@ import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import ParticlesBackground from "@/components/ParticlesBackground";
+import FloatingBubbles from "@/components/FloatingBubbles";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -23,9 +25,11 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background font-montserrat">
+    <div className="min-h-screen bg-background font-montserrat relative">
+      <ParticlesBackground />
+      <FloatingBubbles />
       <Navigation />
-      <main>
+      <main className="relative z-10">
         <HeroSection />
         <AboutSection />
         <SkillsSection />

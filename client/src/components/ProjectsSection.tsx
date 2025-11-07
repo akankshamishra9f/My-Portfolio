@@ -63,11 +63,12 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden bg-gradient-to-br from-card to-card/50 border-primary/20 hover-elevate group cursor-pointer"
+              className="overflow-hidden bg-gradient-to-br from-card to-card/50 border-primary/20 hover-elevate group cursor-pointer relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] hover:scale-105 hover:border-primary/40"
               data-aos="fade-up"
               data-aos-delay={index * 100}
               data-testid={`card-project-${index}`}
             >
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none"></div>
               <div className="relative overflow-hidden h-48 bg-muted">
                 <img
                   src={project.image}
