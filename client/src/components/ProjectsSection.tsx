@@ -130,7 +130,7 @@ export default function ProjectsSection() {
         <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="400">
           <Button
             size="lg"
-            onClick={() => console.log("View all projects")}
+            onClick={() => setLocation("/projects")}
             className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white font-poppins font-semibold px-10 shadow-lg hover-elevate relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-105 hover:animate-[bounceScale_0.6s_ease-in-out]"
             data-testid="button-view-all-projects"
           >
