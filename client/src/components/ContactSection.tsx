@@ -73,8 +73,8 @@ export default function ContactSection() {
     {
       name: "Email",
       icon: Mail,
-      link: "mailto:akanksha@example.com",
-      label: "akanksha@example.com",
+      link: "mailto:mishrakanksha0927@gmail.com",
+      label: "mishrakanksha0927@gmail.com",
       color: "from-red-500 to-orange-500",
     },
     {
@@ -87,8 +87,8 @@ export default function ContactSection() {
     {
       name: "GitHub",
       icon: Github,
-      link: "https://github.com/akankshaM",
-      label: "github.com/akankshaM",
+      link: "https://github.com/akankshamishra9f",
+      label: "github.com/akankshamishra9f",
       color: "from-gray-700 to-gray-900",
     },
   ];

@@ -131,19 +131,24 @@ export default function ProjectsSection() {
         </div>
 
         <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="400">
-          <Button
-            size="lg"
-            onClick={() => setLocation("/projects")}
-            className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white font-poppins font-semibold px-10 shadow-lg hover-elevate relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-105 hover:animate-[bounceScale_0.6s_ease-in-out]"
-            data-testid="button-view-all-projects"
+          <a
+            href="https://github.com/akankshamishra9f"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
-            <span className="absolute inset-0 rounded-md group-hover:animate-[ripple_0.6s_ease-out] bg-white/20"></span>
-            <span className="relative flex items-center gap-2">
-              View All Projects
-              <ExternalLink className="h-5 w-5" />
-            </span>
-          </Button>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white font-poppins font-semibold px-10 shadow-lg hover-elevate relative overflow-hidden group transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-105 hover:animate-[bounceScale_0.6s_ease-in-out]"
+              data-testid="button-view-all-projects"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+              <span className="absolute inset-0 rounded-md group-hover:animate-[ripple_0.6s_ease-out] bg-white/20"></span>
+              <span className="relative flex items-center gap-2">
+                View All Projects
+                <ExternalLink className="h-5 w-5" />
+              </span>
+            </Button>
+          </a>
         </div>
       </div>
     </section>
