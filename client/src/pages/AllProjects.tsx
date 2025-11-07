@@ -4,20 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function AllProjects() {
   const [, setLocation] = useLocation();
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: "ease-out-cubic",
-    });
-  }, []);
 
   const projects = [
     { id: "001", title: "Expanding Cards", tech: ["HTML", "CSS", "JavaScript"] },
